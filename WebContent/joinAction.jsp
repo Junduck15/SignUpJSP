@@ -21,7 +21,6 @@
 			<th>Id</th>
 			<th>Password</th>
 			<th>Name</th>
-			<th>Gender</th>
 			<th>Email</th>
 		</tr>
 		<c:forEach items = "${list}" var= "u">
@@ -29,7 +28,6 @@
 				<td>${u.getUserId()}</td>
 				<td>${u.getUserPassword()}</td>
 				<td>${u.getUserName()}</td>
-				<td>${u.getUserGender()}</td>
 				<td>${u.getUserEmail()}</td>
 			</tr>
 		</c:forEach>

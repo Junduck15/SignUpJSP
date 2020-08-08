@@ -6,7 +6,6 @@
 <jsp:setProperty name="user" property="userID"/>
 <jsp:setProperty name="user" property="userPassword"/>
 <jsp:setProperty name="user" property="userName"/>
-<jsp:setProperty name="user" property="userGender"/>
 <jsp:setProperty name="user" property="userEmail"/>
 <!DOCTYPE html>
 <html>
@@ -22,7 +21,7 @@
     }
     
         if(user.getUserID() == null || user.getUserPassword() == null || 
-        user.getUserName() == null || user.getUserGender() == null || 
+        user.getUserName() == null ||
         user.getUserEmail() == null){
             PrintWriter script = response.getWriter();
             script.println("<script>");
